@@ -2,9 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  const path = require("path");
-  console.log(__dirname);
-  res.sendFile(path.resolve(__dirname, "public/panda2.jpg"));
+  res.send(__dirname);
 });
 
 app.get("/something", (req, res) => {
