@@ -6,7 +6,7 @@ app.get("/api/", (req, res) => {
 });
 
 app.use(express.static("client/build"));
-app.get("*", (req, res) => {
+app.get("/22", (req, res) => {
   const path = require("path");
   console.log(process.env);
   res.sendFile(path.resolve(__dirname, "client/build/index.html"));
