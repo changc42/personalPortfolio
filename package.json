@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "concurrently \"nodemon index.js\" \"npm start --prefix client\"",
     "heroku-postbuild": "npm i --prefix client && npm run build --prefix client"
   },
   "author": "",
