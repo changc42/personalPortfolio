@@ -1,18 +1,34 @@
 import React from "react";
-import Types from "./Types";
-import Intro from "../components/Intro/Intro";
-import "../styling/App.css";
-import { ThemeProvider, makeStyles } from "@material-ui/core/styles";
+import Header from "./sections/Header";
+import { ThemeProvider, withStyles } from "@material-ui/core/styles";
 import theme from "../styling/theme";
+import { GlobalCSS } from "../styling/aboutMeStyles";
+import appStyles from "../styling/appStyles";
+import Test from "./Test";
+import AboutMe from "./sections/AboutMe";
+import Container from "@material-ui/core/Container";
+import Section from "./Section";
+import Projects from "./sections/projectsSection/Projects";
 
-function App() {
+function App(props) {
+  const { classes } = props;
   return (
-    <div className="App">
-      <ThemeProvider theme={theme}>
-        <Intro />
-      </ThemeProvider>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className={classes.App}>
+        <Container>
+          <Section>
+            <Header />
+          </Section>
+          <Section>
+            <AboutMe />
+          </Section>
+          <Section>
+            <Projects />
+          </Section>
+        </Container>
+      </div>
+    </ThemeProvider>
   );
 }
 
-export default App;
+export default withStyles(appStyles)(App);
