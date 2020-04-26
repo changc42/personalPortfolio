@@ -11,7 +11,7 @@ import Grid from "@material-ui/core/Grid";
 function Projects(props) {
   const { classes } = props;
   function renderCards(allCardDetails) {
-    return allCardDetails.map(cardDetails => {
+    return allCardDetails.map((cardDetails) => {
       console.log(cardDetails);
       return (
         <Grid item xs={12} sm={6} md={4}>

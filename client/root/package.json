@@ -21,6 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "/root/build",
   "eslintConfig": {
     "extends": "react-app"
   },

@@ -14,7 +14,7 @@ function ProjectCard(props) {
     <div className={classes.ProjectCard}>
       <Card>
         <CardHeader title={cardDetails.title}></CardHeader>
-        <img src={cardDetails.image} />
+        <img src={`${process.env.PUBLIC_URL}/${cardDetails.image}`} />
         <CardContent>
           <Typography variant="body1">{cardDetails.description}</Typography>
           <br />

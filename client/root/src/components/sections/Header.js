@@ -9,21 +9,26 @@ import AboutMe from "./AboutMe";
 import Grid from "@material-ui/core/Grid";
 import SocialMediaButton from "../SocialMediaButton";
 
-const Header = props => {
+const Header = (props) => {
   const { classes } = props;
   const images = [
     "linkedin-with-text.svg",
     "github-text.png",
-    "leetcode-with-text.svg"
+    "Leetcode-with-text.svg",
   ];
 
   return (
     <div className={classes.Header}>
       <Typography variant="h1">Caleb Chang</Typography>
       <div className={classes.SocialMediaButtons}>
-        <SocialMediaButton src="LeetCode-with-text.svg" />
-        <SocialMediaButton src="github-text.png" />
-        <SocialMediaButton src="linkedin-with-text.svg" />
+        {images.map((e) => {
+          return (
+            <SocialMediaButton
+              src={`${process.env.PUBLIC_URL}/${e}`}
+              alt={`${e}`}
+            />
+          );
+        })}
       </div>
     </div>
   );

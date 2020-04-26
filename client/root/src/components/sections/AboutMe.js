@@ -13,7 +13,7 @@ function AboutMe(props) {
       <div>
         <Grid container spacing={5}>
           <Grid item xs={12} md={3} className={classes.ProfilePic}>
-            <img src="me-small.png" />
+            <img src={`${process.env.PUBLIC_URL}/me-small.png`} />
           </Grid>
           <Grid item xs={12} md={9}>
             <div>

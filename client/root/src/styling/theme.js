@@ -4,13 +4,13 @@ let theme = createMuiTheme({
   typography: {
     fontSize: 13,
     h1: {
-      textAlign: "center"
+      textAlign: "center",
     },
     h2: {
       textAlign: "center",
-      margin: "20px"
-    }
-  }
+      margin: "20px",
+    },
+  },
 });
 theme = responsiveFontSizes(theme);
 
