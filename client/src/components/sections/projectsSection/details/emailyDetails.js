@@ -2,7 +2,7 @@ import skills from "../../../../skillTypes";
 
 export default {
   title: "Emaily",
-  image: "subProjects/pictures/emaily.png",
+  image: "emaily.png",
   description:
     "Automate the email sending process! Collect data from your users",
   skillsUsed: [
@@ -12,6 +12,6 @@ export default {
     skills.NodeJS,
     skills.PassportJS,
     skills.Stripe,
-    skills.ExpressJS
-  ]
+    skills.ExpressJS,
+  ],
 };
