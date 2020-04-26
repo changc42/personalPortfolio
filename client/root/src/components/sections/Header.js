@@ -14,7 +14,7 @@ const Header = (props) => {
   const images = [
     "linkedin-with-text.svg",
     "github-text.png",
-    "Leetcode-with-text.svg",
+    "LeetCode-with-text.svg",
   ];
 
   return (

@@ -14,4 +14,5 @@ export default {
     skills.Stripe,
     skills.ExpressJS,
   ],
+  url: "projects/emaily",
 };

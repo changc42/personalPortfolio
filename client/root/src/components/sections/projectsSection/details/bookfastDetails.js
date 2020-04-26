@@ -12,4 +12,5 @@ export default {
     skills.NodeJS,
     skills.ExpressJS,
   ],
+  url: "projects/bookfast",
 };

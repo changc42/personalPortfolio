@@ -5,4 +5,5 @@ export default {
   image: "calculator.png",
   description: "An intuitive and clean web-based calulator.",
   skillsUsed: [skills.ReactJS, skills.CSS, skills.JavaScript],
+  url: "projects/calculator",
 };
