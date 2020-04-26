@@ -4,8 +4,8 @@ import { ThemeProvider, withStyles } from "@material-ui/core/styles";
 import theme from "../styling/theme";
 import { GlobalCSS } from "../styling/aboutMeStyles";
 import appStyles from "../styling/appStyles";
-import Test from "./Test";
 import AboutMe from "./sections/AboutMe";
+import Test from "./sections/Test";
 import Footer from "./sections/Footer";
 import Container from "@material-ui/core/Container";
 import Section from "./Section";
@@ -28,6 +28,9 @@ function App(props) {
           </Section>
           <Section>
             <Footer />
+          </Section>
+          <Section>
+            <Test />
           </Section>
         </Container>
       </div>
