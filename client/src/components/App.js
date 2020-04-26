@@ -26,12 +26,6 @@ function App(props) {
           <Section>
             <Projects />
           </Section>
-          <Section>
-            <Footer />
-          </Section>
-          <Section>
-            <Test />
-          </Section>
         </Container>
       </div>
     </ThemeProvider>
