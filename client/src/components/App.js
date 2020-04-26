@@ -6,6 +6,7 @@ import { GlobalCSS } from "../styling/aboutMeStyles";
 import appStyles from "../styling/appStyles";
 import Test from "./Test";
 import AboutMe from "./sections/AboutMe";
+import Footer from "./sections/Footer";
 import Container from "@material-ui/core/Container";
 import Section from "./Section";
 import Projects from "./sections/projectsSection/Projects";
@@ -24,6 +25,9 @@ function App(props) {
           </Section>
           <Section>
             <Projects />
+          </Section>
+          <Section>
+            <Footer />
           </Section>
         </Container>
       </div>
