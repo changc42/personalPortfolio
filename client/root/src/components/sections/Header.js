@@ -17,15 +17,31 @@ const Header = (props) => {
     "LeetCode-with-text.svg",
   ];
 
+  const socialMediaButton = [
+    {
+      imgsrc: "linkedin-with-text.svg",
+      href: "https://www.linkedin.com/in/caleb-chang-010337123/",
+    },
+    {
+      imgsrc: "github-text.png",
+      href: "https://github.com/changc42",
+    },
+    {
+      imgsrc: "LeetCode-with-text.svg",
+      href: "https://leetcode.com/changc42/",
+    },
+  ];
+
   return (
     <div className={classes.Header}>
       <Typography variant="h1">Caleb Chang</Typography>
       <div className={classes.SocialMediaButtons}>
-        {images.map((e) => {
+        {socialMediaButton.map((obj) => {
           return (
             <SocialMediaButton
-              src={`${process.env.PUBLIC_URL}/${e}`}
-              alt={`${e}`}
+              src={`${process.env.PUBLIC_URL}/${obj.imgsrc}`}
+              alt={`${obj.imgsrc}`}
+              href={`${obj.href}`}
             />
           );
         })}
