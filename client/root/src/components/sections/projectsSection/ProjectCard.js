@@ -27,7 +27,7 @@ function ProjectCard(props) {
         </CardContent>
       </Card> */}
       <Card>
-        <CardActionArea href={`${cardDetails.url}`} target="_blank">
+        <CardActionArea href={`${cardDetails.demo_url}`} target="_blank">
           <CardMedia
             image={`${process.env.PUBLIC_URL}/${cardDetails.image}`}
             className={classes.media}
@@ -44,11 +44,21 @@ function ProjectCard(props) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
+          <Button
+            size="small"
+            color="primary"
+            href={`${cardDetails.github_url}`}
+            target="_blank"
+          >
             GitHub
           </Button>
-          <Button size="small" color="primary">
-            Try it!
+          <Button
+            size="small"
+            color="primary"
+            href={`${cardDetails.demo_url}`}
+            target="_blank"
+          >
+            View Project
           </Button>
         </CardActions>
       </Card>

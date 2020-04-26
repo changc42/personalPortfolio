@@ -5,5 +5,6 @@ export default {
   image: "calculator.png",
   description: "An intuitive and clean web-based calulator.",
   skillsUsed: [skills.ReactJS, skills.CSS, skills.JavaScript],
-  url: "projects/calculator",
+  demo_url: "projects/calculator",
+  github_url: "https://github.com/rockysingh3/React-Calculator",
 };

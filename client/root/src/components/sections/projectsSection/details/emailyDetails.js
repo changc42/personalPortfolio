@@ -14,5 +14,6 @@ export default {
     skills.Stripe,
     skills.ExpressJS,
   ],
-  url: "projects/emaily",
+  demo_url: "projects/emaily",
+  github_url: "https://github.com/changc42/node-react-course",
 };

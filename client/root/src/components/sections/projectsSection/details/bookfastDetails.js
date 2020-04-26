@@ -12,5 +12,6 @@ export default {
     skills.NodeJS,
     skills.ExpressJS,
   ],
-  url: "projects/bookfast",
+  demo_url: "projects/bookfast",
+  github_url: "https://github.com/changc42/bookfast",
 };

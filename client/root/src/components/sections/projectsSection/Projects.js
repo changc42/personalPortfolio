@@ -24,7 +24,6 @@ function Projects(props) {
   return (
     <div className={classes.Projects}>
       <Typography variant="h2">Projects</Typography>
-      <ProjectFilter />
       <Grid container spacing={5}>
         {renderCards(allCardDetails)}
       </Grid>
