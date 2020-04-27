@@ -26,16 +26,17 @@ function ProjectCard(props) {
           </Typography>
         </CardContent>
       </Card> */}
-      <Card>
+      <Card elevation="3" className={classes.Card}>
         <CardActionArea href={`${cardDetails.demo_url}`} target="_blank">
-          <CardMedia
-            image={`${process.env.PUBLIC_URL}/${cardDetails.image}`}
-            className={classes.media}
-            component="img"
-          />
           <CardContent>
-            <Typography variant="h5">{cardDetails.title}</Typography>
-            <br />
+            <Typography variant="h4" style={{ textAlign: "center" }}>
+              {cardDetails.title}
+            </Typography>
+            <CardMedia
+              image={`${process.env.PUBLIC_URL}/${cardDetails.image}`}
+              className={classes.media}
+              component="img"
+            />
             <Typography variant="body1">{cardDetails.description}</Typography>
             <br />
             <Typography variant="body2" color="textSecondary">

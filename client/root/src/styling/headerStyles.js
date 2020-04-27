@@ -1,8 +1,10 @@
-const headerStyles = theme => ({
-  Header: {},
+const headerStyles = (theme) => ({
+  Header: {
+    margin: "40px 0 60px 0",
+  },
   SocialMediaButtons: {
-    textAlign: "center"
-  }
+    textAlign: "center",
+  },
 });
 
 export default headerStyles;

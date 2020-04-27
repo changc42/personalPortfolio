@@ -10,23 +10,22 @@ import Footer from "./sections/Footer";
 import Container from "@material-ui/core/Container";
 import Section from "./Section";
 import Projects from "./sections/projectsSection/Projects";
+import Divider from "@material-ui/core/Divider";
 
 function App(props) {
   const { classes } = props;
   return (
     <ThemeProvider theme={theme}>
       <div className={classes.App}>
-        <Container>
-          <Section>
-            <Header />
-          </Section>
-          <Section>
-            <AboutMe />
-          </Section>
-          <Section>
-            <Projects />
-          </Section>
-        </Container>
+        <Header />
+        <Divider />
+        <Section>
+          <AboutMe />
+        </Section>
+        <Divider />
+        <Section>
+          <Projects />
+        </Section>
       </div>
     </ThemeProvider>
   );

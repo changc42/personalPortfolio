@@ -12,6 +12,11 @@ module.exports = (app) => {
       path.resolve(__dirname, "../client/projects/calculator/build/index.html")
     );
   });
+  app.get("/projects/dragndrop", (req, res) => {
+    res.sendFile(
+      path.resolve(__dirname, "../client/projects/dragndrop/build/index.html")
+    );
+  });
   app.get("*", (req, res) => {
     res.status(404).send("404. this page does not exist");
   });
