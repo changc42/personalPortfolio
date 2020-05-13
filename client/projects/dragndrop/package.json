@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "projects/dragndrop/build",
+  "homepage": "/projects/dragndrop",
   "eslintConfig": {
     "extends": "react-app"
   },
