@@ -11,22 +11,22 @@ function AboutMe(props) {
     <div className={classes.AboutMe}>
       <Typography variant="h2">About Me</Typography>
       <div>
-        <Grid container spacing={5}>
-          <Grid item xs={12} md={3} className={classes.ProfilePic}>
+        {/* <Grid container spacing={5}> */}
+        {/* <Grid item xs={12} md={3} className={classes.ProfilePic}>
             <img src={`${process.env.PUBLIC_URL}/me-small.png`} />
-          </Grid>
-          <Grid item xs={12} md={9}>
-            <div>
-              <Typography variant="body1">
-                Caleb is a a computer science student at CUNY, Queens College.
-                <br />
-                He is seeking an internship for Summer 2020.
-                <br />
-                His expected graduation date is December 2020.
-              </Typography>
-            </div>
-          </Grid>
-        </Grid>
+          </Grid> */}
+        {/* <Grid item xs={12} md={9}> */}
+        <div>
+          <Typography variant="body1" style={{ textAlign: "center" }}>
+            Caleb is a a computer science student at CUNY, Queens College.
+            <br />
+            He is seeking an internship for Summer 2020.
+            <br />
+            His expected graduation date is December 2020.
+          </Typography>
+        </div>
+        {/* </Grid> */}
+        {/* </Grid> */}
       </div>
     </div>
   );
