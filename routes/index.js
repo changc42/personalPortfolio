@@ -14,7 +14,7 @@ module.exports = (app) => {
     )
   );
 
-  // emailRaterRoutes(app);
+  app.use("/projects/emailrater", emailRaterRoutes);
 
   app.get("*", (req, res) => {
     res.status(404).send("404. this page does not exist");
