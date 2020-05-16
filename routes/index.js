@@ -6,11 +6,19 @@ const emailRaterRoutes = require("./projects/emailRaterRoutes");
 module.exports = (app) => {
   app.use(express.static("client/root/build"));
 
-  let projects = ["calculator", "dragndrop", "emailrater"];
-  projects.forEach((project) =>
+  let reactProjects = ["calculator", "dragndrop", "emailrater"];
+  reactProjects.forEach((project) =>
     app.use(
       `/projects/${project}`,
       express.static(`client/projects/${project}/build`)
+    )
+  );
+
+  let vanillaHTMLProjects = ["weatherapp"];
+  vanillaHTMLProjects.forEach((project) =>
+    app.use(
+      `/projects/${project}`,
+      express.static(`client/projects/${project}`)
     )
   );
 

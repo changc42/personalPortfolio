@@ -9,5 +9,6 @@ export default {
   JavaScript: "JavaScript",
   HTML: "HTML",
   Stripe: "Stripe",
-  DragNDrop: "DragNDrop"
+  DragNDrop: "DragNDrop",
+  HTTP_REST: "HTTP/REST",
 };
