@@ -68,7 +68,7 @@ let weatherappDetails = {
 
 let pokemonwarDetails = {
   title: "Pokemon War",
-  image: "pokemonwar.png",
+  image: "pokemonwar.PNG",
   description: "Aesthetic game of who can get a better hand.",
   skillsUsed: [skills.ReactJS],
   demo_url: "projects/pokemonwar",
@@ -81,7 +81,7 @@ export default [
   // emailyDetails,
   // bookfastDetails,
   dragNDropDetails,
-  weatherappDetails,
+  // weatherappDetails,
 
   // emailRaterDetails,
 ];
