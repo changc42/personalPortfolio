@@ -5,7 +5,7 @@ import theme from "../../../styling/theme";
 import Typography from "@material-ui/core/Typography";
 import ProjectFilter from "./ProjectFilter";
 import ProjectCard from "./ProjectCard";
-import allCardDetails from "./details/allCardDetails";
+import allCardDetails from "./allCardDetails";
 import Grid from "@material-ui/core/Grid";
 
 function Projects(props) {

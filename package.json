@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run build --prefix client/root\" \"npm run build --prefix client/projects/calculator\" \"npm run build --prefix client/projects/dragndrop\" \"npm run build --prefix client/projects/emailrater\" \"nodemon index.js\"",
-    "heroku-postbuild": "concurrently \"npm i --prefix=client/projects/emailrater\" \"npm i --prefix=client/projects/calculator\" \"npm i --prefix=client/root\" \"npm i --prefix=client/projects/dragndrop\" && concurrently \"npm run build --prefix=client/projects/emailrater\"  \"npm run build --prefix=client/root\"  \"npm run build --prefix=client/projects/calculator\"  \"npm run build --prefix=client/projects/dragndrop\""
+    "start": "concurrently \"npm run build --prefix client/root\" \"npm run build --prefix client/projects/calculator\" \"npm run build --prefix client/projects/dragndrop\" \"npm run build --prefix client/projects/pokemonwar\" \"npm run build --prefix client/projects/emailrater\" \"nodemon index.js\"",
+    "heroku-postbuild": "concurrently \"npm i --prefix=client/projects/emailrater\" \"npm i --prefix=client/projects/pokemonwar\" \"npm i --prefix=client/projects/calculator\" \"npm i --prefix=client/root\" \"npm i --prefix=client/projects/dragndrop\" && concurrently \"npm run build --prefix=client/projects/emailrater\"  \"npm run build --prefix=client/root\"  \"npm run build --prefix=client/projects/calculator\"  \"npm run build --prefix=client/projects/dragndrop\" \"npm run build --prefix=client/projects/pokemonwar\""
   },
   "author": "",
   "license": "ISC",
