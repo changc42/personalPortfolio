@@ -26,7 +26,8 @@ let calculatorDetails = {
 let dragNDropDetails = {
   title: "drag-n-drop",
   image: "drag-n-drop.png",
-  description: "Drag the knight to any position on the board",
+  description:
+    "Drag the knight to any position on the board (cursor clicks only. Not for mobile)",
   skillsUsed: [skills.ReactJS, skills.DragNDrop],
   demo_url: "projects/dragndrop",
   github_url: "https://github.com/changc42/drag-and-drop",
