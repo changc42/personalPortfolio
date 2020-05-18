@@ -1,13 +1,13 @@
 const {
   client_id,
   state,
-} = require("../../../../../congif/emailraterConfig/keys"); //routes/emailraterRoutes/projects/routes/personalportfolio/config/emailraterConfig/keys
-const scopes = require("../../../../../congif/emailraterConfig/scopes");
-const endpoints = require("../../../../../congif/emailraterConfig/endpoints");
+} = require("../../../../../config/emailraterConfig/keys"); //routes/emailraterRoutes/projects/routes/personalportfolio/config/emailraterConfig/keys
+const scopes = require("../../../../../config/emailraterConfig/scopes");
+const endpoints = require("../../../../../config/emailraterConfig/endpoints");
 const fs = require("fs");
 const {
   redirect_uri,
-} = require("../../../../../congif/emailraterConfig/devVProd");
+} = require("../../../../../config/emailraterConfig/devVProd");
 
 module.exports = (req, res, db) => {
   let query = {

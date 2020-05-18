@@ -9,7 +9,7 @@ function App() {
   let [myMessageList, setMyMessageList] = useState([]);
 
   useEffect(() => {
-    fetch("/api/sendResults")
+    fetch("api/sendResults")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

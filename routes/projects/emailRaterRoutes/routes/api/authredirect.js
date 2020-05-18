@@ -2,8 +2,13 @@ const url = require("url");
 const https = require("https");
 const fs = require("fs");
 
-const { client_id, client_secret } = require("../../../config/keys");
-const { redirect_uri } = require("../../../config/devVProd");
+const {
+  client_id,
+  client_secret,
+} = require("../../../../../config/emailraterConfig/keys");
+const {
+  redirect_uri,
+} = require("../../../../../config/emailraterConfig/devVProd");
 
 module.exports = (req, res, db) => {
   // takes in empty accessToken object as parameter and inserts accessToken into it
@@ -50,7 +55,7 @@ module.exports = (req, res, db) => {
         accessToken: authObj.access_token,
         myMessageList: [],
       };
-      res.redirect("/query");
+      res.redirect(req.baseUrl + "/query");
     });
   });
   tokenReq.end(queryString);

@@ -10,7 +10,9 @@ This personal portfolio project hosts, or displays, many other projects.
 4. in ~/client/root/src/components/sections/projectsSection: edit allCardDetails.js. Add photo to ~/client/root/public
 5. Change all absolute paths (non react-router) to relative paths("./" or no slash at all. just a "/" is absolute). Add \<base href="%PUBLIC_URL%/"\> to index.html
 6. If using react router, add basename=/homepage to BroswerRouter
-7. Convert express routes to express.Router() mini-app. Modify index.js routes
+7. If app has backend
+   - Convert express routes to express.Router() mini-app. Modify index.js routes
+   - update express.static(\<path\>)
 8. Edit heroku environment variables and authorized redirect uris for APIs
 
 #### issues that may be improvable

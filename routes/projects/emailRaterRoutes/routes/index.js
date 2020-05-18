@@ -30,12 +30,12 @@ module.exports = (app) => {
     sendResults(req, res, db);
   });
 
-  app.use(express.static("build"));
+  app.use(express.static("client/projects/emailrater/build"));
 
   app.get("*", (req, res) => {
     res.sendFile(
       path.resolve(
-        __dirname(routes),
+        __dirname,
         "../../../../client/projects/emailrater/build/index.html"
       )
     ); //emailRaterRoutes/projects/routes/personalportfolio/client/projects/emailrater/build/index.html

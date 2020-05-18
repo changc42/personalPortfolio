@@ -5,8 +5,8 @@ const https = require("https");
 const url = require("url");
 const fs = require("fs");
 
-const endpoints = require("../../../config/endpoints");
-const { API_KEY } = require("../../../config/keys");
+const endpoints = require("../../../../../config/emailraterConfig/endpoints");
+const { API_KEY } = require("../../../../../config/emailraterConfig/keys");
 
 module.exports = (req, res, db) => {
   getMessageList(req, res, db);
@@ -140,7 +140,7 @@ function assessMessages(req, res, db) {
         count++;
         console.log(`${count}/${db[req.headers.cookie].myMessageList.length}`);
         if (count === db[req.headers.cookie].myMessageList.length) {
-          res.redirect("/results");
+          res.redirect(req.baseUrl + "/results");
         }
       });
     });

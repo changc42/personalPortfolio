@@ -6,14 +6,6 @@ const emailRaterRoutes = require("./projects/emailRaterRoutes");
 module.exports = (app) => {
   app.use(express.static("client/root/build"));
 
-  let reactProjects = ["calculator", "dragndrop", "emailrater", "pokemonwar"];
-  reactProjects.forEach((project) =>
-    app.use(
-      `/projects/${project}`,
-      express.static(`client/projects/${project}/build`)
-    )
-  );
-
   let vanillaHTMLProjects = ["weatherapp"];
   vanillaHTMLProjects.forEach((project) =>
     app.use(
@@ -23,6 +15,14 @@ module.exports = (app) => {
   );
 
   app.use("/projects/emailrater", emailRaterRoutes);
+
+  let reactProjects = ["calculator", "dragndrop", "emailrater", "pokemonwar"];
+  reactProjects.forEach((project) =>
+    app.use(
+      `/projects/${project}`,
+      express.static(`client/projects/${project}/build`)
+    )
+  );
 
   app.get("*", (req, res) => {
     res.status(404).send("404. this page does not exist");
