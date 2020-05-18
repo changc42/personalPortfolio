@@ -34,7 +34,7 @@ let dragNDropDetails = {
 
 let emailRaterDetails = {
   title: "Email Rater",
-  image: "emailRater.png",
+  image: "emailRater.PNG",
   description: "Find out how negative or positive your emails are",
   skillsUsed: [skills.CSS, skills.JavaScript, skills.NodeJS],
   demo_url: "projects/emailrater",

@@ -1,7 +1,7 @@
 if (process.env.NODE_ENV === "production") {
   module.exports = {
     redirect_uri:
-      "https://nameless-atoll-72332.herokuapp.com/projects/emailrater/api/authredirect",
+      "http://me.calebchang.tech/projects/emailrater/api/authredirect",
   };
 } else {
   module.exports = {
