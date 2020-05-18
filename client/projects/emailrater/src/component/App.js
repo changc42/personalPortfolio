@@ -12,10 +12,8 @@ function App() {
     fetch("api/sendResults")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setMyMessageList(data.myMessageList);
         setIsLoading(false);
-        console.log(myMessageList, "Test");
       });
   }, [isLoading]);
   return (

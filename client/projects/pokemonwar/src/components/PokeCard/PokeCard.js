@@ -22,7 +22,6 @@ class PokeCard extends React.Component {
     let imgURL = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${digit3(
       imgID
     )}.png`;
-    console.log(imgURL);
     return (
       <div
         className={classes.PokeCard}

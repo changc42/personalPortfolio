@@ -8,7 +8,7 @@ const {
 } = require("../../../../../config/emailraterConfig/keys");
 const {
   redirect_uri,
-} = require("../../../../../config/emailraterConfig/devVProd");
+} = require("../../../../../config/emailraterConfig/devVProdRoutes");
 
 module.exports = (req, res, db) => {
   // takes in empty accessToken object as parameter and inserts accessToken into it
@@ -38,17 +38,6 @@ module.exports = (req, res, db) => {
     });
     tokenRes.on("end", () => {
       let authObj = JSON.parse(sb);
-      // let currentTime = Date.now();
-      // authObj.expiration = currentTime + 3600000;
-
-      // fs.writeFile(
-      //   "./cache/accessToken.txt",
-      //   JSON.stringify(authObj),
-      //   (err) => {
-      //     if (err) throw err;
-      //     console.log("finished caching accessToken");
-      //   }
-      // );
 
       let cookieId = req.headers.cookie;
       db[cookieId] = {

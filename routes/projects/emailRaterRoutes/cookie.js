@@ -11,7 +11,6 @@ module.exports = (app) => {
         "set-cookie": `emailrater=${uuidv4()}`,
         location: req.url,
       });
-      console.log(req.url);
       res.end();
     } else {
       // console.log("already have cookie", req.url, req.headers);

@@ -7,7 +7,7 @@ const endpoints = require("../../../../../config/emailraterConfig/endpoints");
 const fs = require("fs");
 const {
   redirect_uri,
-} = require("../../../../../config/emailraterConfig/devVProd");
+} = require("../../../../../config/emailraterConfig/devVProdRoutes");
 
 module.exports = (req, res, db) => {
   let query = {
