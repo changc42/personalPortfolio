@@ -28,7 +28,7 @@ let dragNDropDetails = {
   image: "drag-n-drop.png",
   description:
     "Drag the knight to any position on the board (cursor clicks only. Not for mobile)",
-  skillsUsed: [skills.ReactJS, skills.DragNDrop],
+  skillsUsed: [skills.ReactJS],
   demo_url: "projects/dragndrop",
   github_url: "https://github.com/changc42/drag-and-drop",
 };
@@ -37,9 +37,9 @@ let emailRaterDetails = {
   title: "Email Rater",
   image: "emailRater.PNG",
   description: "Find out how negative or positive your emails are",
-  skillsUsed: [skills.CSS, skills.JavaScript, skills.NodeJS],
+  skillsUsed: [skills.ReactJS, skills.NodeJS, skills.HTTP_REST],
   demo_url: "projects/emailrater",
-  github_url: null,
+  github_url: "https://github.com/changc42/emailrater",
 };
 
 let emailyDetails = {
@@ -62,7 +62,7 @@ let weatherappDetails = {
   title: "Weather App",
   image: "newWeatherPic.png",
   description: "What's the weather in your local area?",
-  skillsUsed: [skills.CSS, skills.JavaScript, skills.HTML, skills.HTTP_REST],
+  skillsUsed: [skills.HTML, skills.CSS, skills.JavaScript, skills.HTTP_REST],
   demo_url: "projects/weatherapp",
   github_url: "https://github.com/changc42/weatherapp",
 };
@@ -81,8 +81,7 @@ export default [
   calculatorDetails,
   // emailyDetails,
   // bookfastDetails,
+  emailRaterDetails,
   dragNDropDetails,
   // weatherappDetails,
-
-  emailRaterDetails,
 ];

@@ -12,8 +12,9 @@ This personal portfolio project hosts, or displays, many other projects.
 6. If using react router, add basename=/homepage to BroswerRouter
 7. If app has backend
    - Convert express routes to express.Router() mini-app. Modify index.js routes
-   - update express.static(\<path\>)
-8. Edit heroku environment variables and authorized redirect uris for APIs
+   - update express.static(\<path\>). Path provided is relative to where node app starts
+   - add req.baseUrl() to any res.redirect() calls
+   - Edit heroku environment variables and authorized redirect uris for APIs. Update file exports for keys
 
 #### issues that may be improvable
 
