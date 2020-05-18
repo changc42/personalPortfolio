@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ResultCard from "./ResultCard";
+import ResultCard from "./ResultCard/ResultCard";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Landing from "./Landing";
 import Query from "./Query";
@@ -8,19 +8,18 @@ function App() {
   let [isLoading, setIsLoading] = useState(true);
   let [myMessageList, setMyMessageList] = useState([]);
 
-  // useEffect(() => {
-  //   fetch("sendResults")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setMyMessageList(data.myMessageList);
-  //       setIsLoading(false);
-  //       console.log(myMessageList, "Test");
-  //     });
-  // }, [isLoading]);
-
+  useEffect(() => {
+    fetch("/api/sendResults")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setMyMessageList(data.myMessageList);
+        setIsLoading(false);
+        console.log(myMessageList, "Test");
+      });
+  }, [isLoading]);
   return (
     <BrowserRouter basename="/projects/emailrater">
-      <h1> at react app</h1>
       <Switch>
         <Route exact path="/">
           <Landing />
@@ -28,7 +27,7 @@ function App() {
         <Route exact path="/query">
           <Query />
         </Route>
-        {/* <Route exact path="/results">
+        <Route exact path="/results">
           {isLoading ? (
             <p>loading your messages</p>
           ) : (
@@ -39,7 +38,7 @@ function App() {
               })}
             </div>
           )}
-        </Route> */}
+        </Route>
       </Switch>
     </BrowserRouter>
   );

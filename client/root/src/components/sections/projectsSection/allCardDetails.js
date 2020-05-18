@@ -83,5 +83,5 @@ export default [
   dragNDropDetails,
   // weatherappDetails,
 
-  // emailRaterDetails,
+  emailRaterDetails,
 ];
