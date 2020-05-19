@@ -18,11 +18,8 @@ function AboutMe(props) {
         {/* <Grid item xs={12} md={9}> */}
         <div>
           <Typography variant="body1" style={{ textAlign: "center" }}>
-            Caleb is a a computer science student at CUNY, Queens College.
-            <br />
-            He is seeking an internship for Summer 2020.
-            <br />
-            His expected graduation date is December 2020.
+            I'm a computer science student at CUNY, Queens College, and I'm
+            actively looking for software engineering opportunities.
           </Typography>
         </div>
         {/* </Grid> */}
