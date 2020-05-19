@@ -70,10 +70,18 @@ let weatherappDetails = {
 let pokemonwarDetails = {
   title: "Pokemon War",
   image: "pokemonwar.PNG",
-  description: "Aesthetic game of who can get a better hand.",
+  description: "Aesthetic game of who can get the better hand.",
   skillsUsed: [skills.ReactJS],
   demo_url: "projects/pokemonwar",
   github_url: "https://github.com/changc42/pokemonwar",
+};
+
+let personalPortfolioDetails = {
+  title: "Personal Portfolio",
+  image: "CClogo.png",
+  description: "Your looking at the portfolio right now",
+  skillsUsed: [skills.ReactJS, skills.NodeJS, skills.ExpressJS],
+  github_url: "https://github.com/changc42/personalPortfolio",
 };
 
 export default [
@@ -83,5 +91,6 @@ export default [
   // bookfastDetails,
   emailRaterDetails,
   dragNDropDetails,
+  personalPortfolioDetails,
   // weatherappDetails,
 ];

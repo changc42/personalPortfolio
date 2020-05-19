@@ -27,7 +27,12 @@ function ProjectCard(props) {
         </CardContent>
       </Card> */}
       <Card elevation="3" className={classes.Card}>
-        <CardActionArea href={`${cardDetails.demo_url}`}>
+        <CardActionArea
+          href={
+            cardDetails.demo_url ? cardDetails.demo_url : cardDetails.github_url
+          }
+          target="_blank"
+        >
           <CardContent>
             <Typography variant="h4" style={{ textAlign: "center" }}>
               {cardDetails.title}
@@ -54,14 +59,18 @@ function ProjectCard(props) {
           >
             GitHub
           </Button>
-          <Button
-            size="small"
-            color="primary"
-            href={`${cardDetails.demo_url}`}
-            target="_blank"
-          >
-            View Project
-          </Button>
+          {cardDetails.demo_url ? (
+            <Button
+              size="small"
+              color="primary"
+              href={`${cardDetails.demo_url}`}
+              target="_blank"
+            >
+              View Project
+            </Button>
+          ) : (
+            ""
+          )}
         </CardActions>
       </Card>
     </div>
