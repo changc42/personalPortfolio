@@ -1,0 +1,19 @@
+{
+  "name": "06-final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build --prefix client && nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "express-winston": "^4.0.3",
+    "nodemon": "^2.0.3",
+    "uuid": "^8.0.0",
+    "winston": "^3.2.1"
+  }
+}

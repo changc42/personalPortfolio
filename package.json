@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run build --prefix client/root\" \"npm run build --prefix client/projects/calculator\" \"npm run build --prefix client/projects/dragndrop\" \"npm run build --prefix client/projects/pokemonwar\" \"npm run build --prefix client/projects/emailrater\" \"nodemon index.js\"",
-    "heroku-postbuild": "npm i --prefix=client/projects/emailrater && npm i --prefix=client/projects/pokemonwar && npm i --prefix=client/projects/calculator && npm i --prefix=client/root && npm i --prefix=client/projects/dragndrop && npm run build --prefix=client/projects/emailrater && npm run build --prefix=client/root && npm run build --prefix=client/projects/calculator && npm run build --prefix=client/projects/dragndrop && npm run build --prefix=client/projects/pokemonwar"
+    "server": "nodemon index.js",
+    "installDep": "npm i --force --prefix projects/emailrater && npm i --force --prefix projects/emailrater/client && npm i --force --prefix projects/pokemonwar && npm i --force --prefix projects/calculator && npm i --force --prefix=client/root && npm i --force --prefix projects/dragndrop\"",
+    "start": "concurrently \"npm run build --prefix client/root\" \"npm run build --prefix projects/calculator\" \"npm run build --prefix projects/dragndrop\" \"npm run build --prefix projects/pokemonwar\" \"npm run build --prefix projects/emailrater/client\" && nodemon index.js",
+    "heroku-postbuild": "npm i --prefix projects/emailrater && npm i --prefix projects/emailrater/client && npm i --prefix projects/pokemonwar && npm i --prefix projects/calculator && npm i --prefix=client/root && npm i --prefix projects/dragndrop && npm run build --prefix projects/emailrater/client && npm run build --prefix=client/root && npm run build --prefix projects/calculator && npm run build --prefix projects/dragndrop && npm run build --prefix projects/pokemonwar"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^5.1.0",
     "express": "^4.17.1",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.4",
     "uuid": "^8.0.0"
   },
   "engines": {
