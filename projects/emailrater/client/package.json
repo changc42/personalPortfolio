@@ -18,6 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "/projects/emailrater",
   "eslintConfig": {
     "extends": "react-app"
   },
