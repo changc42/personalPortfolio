@@ -8,13 +8,17 @@ const { redirect_uri } = require("../../../config/devVProdRoutes");
 module.exports = (req, res, db) => {
   // takes in empty accessToken object as parameter and inserts accessToken into it
   // after get access token, sends user a form
+
+  let { protocol, host, path } = url.parse(redirect_uri);
+  new_redirect_uri = protocol + "//" + host + req.baseUrl + path;
+
   let authCode = url.parse(req.url, true).query.code;
   let query = {
     client_id: client_id,
     client_secret: client_secret,
     code: authCode,
     grant_type: "authorization_code",
-    redirect_uri: redirect_uri,
+    redirect_uri: new_redirect_uri,
   };
   let queryString = new URLSearchParams(query).toString();
   const options = {
@@ -44,7 +48,7 @@ module.exports = (req, res, db) => {
       //     console.log("finished caching accessToken");
       //   }
       // );
-
+      console.log(authObj);
       let cookieId = req.headers.cookie;
       db[cookieId] = {
         accessToken: authObj.access_token,

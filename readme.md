@@ -11,8 +11,8 @@ This personal portfolio project hosts, or displays, many other projects.
 
 #### Everytime a project is added, must manually update
 
-1. in ~/package.json: `"start": "npm run build --prefix client/projects/<project name>"`
-2. in ~/package.json: `"heroku-postbuild": "npm i --prefix=client/projects/<project name> && npm run build --prefix=client/projects/<project name>"`
+1. in ~/package.json: `"start": "npm run build --prefix projects/<project name>"`
+2. in ~/package.json: `"heroku-postbuild": "npm i --prefix projects/<project name> && npm run build --prefix projects/<project name>"`
 3. in ~/client/root/src/components/sections/projectsSection: edit allCardDetails.js. Add photo to ~/client/root/public
 4. Edit heroku environment variables and authorized redirect uris for APIs.
 

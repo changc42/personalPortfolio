@@ -4,6 +4,6 @@ if (process.env.NODE_ENV === "production") {
   };
 } else {
   module.exports = {
-    redirect_uri: "http://localhost:5000/api/authredirect",
+    redirect_uri: `http://localhost:5000/api/authredirect`,
   };
 }

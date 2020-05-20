@@ -3,11 +3,15 @@ const scopes = require("../../../config/scopes");
 const endpoints = require("../../../config/endpoints");
 const fs = require("fs");
 const { redirect_uri } = require("../../../config/devVProdRoutes");
+const url = require("url");
 
 module.exports = (req, res, db) => {
+  let { protocol, host, path } = url.parse(redirect_uri);
+  new_redirect_uri = protocol + "//" + host + req.baseUrl + path;
+
   let query = {
     client_id: client_id,
-    redirect_uri: redirect_uri,
+    redirect_uri: new_redirect_uri,
     response_type: "code",
     scope: scopes.read,
     state: state,

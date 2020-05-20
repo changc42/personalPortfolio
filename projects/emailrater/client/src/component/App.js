@@ -8,7 +8,7 @@ import Results from "./Results/Results";
 
 function App() {
   return (
-    <BrowserRouter basename="%PUBLIC_URL%/">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/">
           <Landing />
