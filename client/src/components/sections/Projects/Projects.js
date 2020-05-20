@@ -1,11 +1,10 @@
 import React from "react";
-import projectsStyling from "../../../styling/projects/projectsStyling";
+import projectsStyling from "./projectsStyling";
 import { withStyles } from "@material-ui/core/styles";
-import theme from "../../../styling/theme";
+import theme from "../../../muiTheme";
 import Typography from "@material-ui/core/Typography";
-import ProjectFilter from "./ProjectFilter";
-import ProjectCard from "./ProjectCard";
-import allCardDetails from "./allCardDetails";
+import ProjectCard from "./ProjectCard/ProjectCard";
+import allCardDetails from "../../../allCardDetails";
 import Grid from "@material-ui/core/Grid";
 
 function Projects(props) {

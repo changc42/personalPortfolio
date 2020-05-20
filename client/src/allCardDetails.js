@@ -1,4 +1,4 @@
-import skills from "../../../skillTypes";
+import skills from "./skillTypes";
 
 let bookfastDetails = {
   title: "Bookfast",
@@ -17,7 +17,7 @@ let bookfastDetails = {
 let calculatorDetails = {
   title: "Calculator",
   image: "calculator.png",
-  description: "An intuitive and clean web-based calulator.",
+  description: "State management and algorithms",
   skillsUsed: [skills.ReactJS],
   demo_url: "projects/calculator",
   github_url: "https://github.com/rockysingh3/React-Calculator",
@@ -27,7 +27,7 @@ let dragNDropDetails = {
   title: "drag-n-drop",
   image: "drag-n-drop.png",
   description:
-    "Drag the knight to any position on the board (cursor clicks only. Not for mobile)",
+    "State management and drag-and-drop (cursor clicks only. Not for mobile)",
   skillsUsed: [skills.ReactJS],
   demo_url: "projects/dragndrop",
   github_url: "https://github.com/changc42/drag-and-drop",
@@ -36,7 +36,7 @@ let dragNDropDetails = {
 let emailRaterDetails = {
   title: "Email Rater",
   image: "emailRater.PNG",
-  description: "Find out how negative or positive your emails are",
+  description: "HTTP/REST APIs and cookie-session management",
   skillsUsed: [skills.ReactJS, skills.NodeJS, skills.HTTP_REST],
   demo_url: "projects/emailrater",
   github_url: "https://github.com/changc42/emailrater",
@@ -70,7 +70,7 @@ let weatherappDetails = {
 let pokemonwarDetails = {
   title: "Pokemon War",
   image: "pokemonwar.PNG",
-  description: "Aesthetic game of who can get the better hand.",
+  description: "State management and responsive design",
   skillsUsed: [skills.ReactJS],
   demo_url: "projects/pokemonwar",
   github_url: "https://github.com/changc42/pokemonwar",
@@ -79,9 +79,33 @@ let pokemonwarDetails = {
 let personalPortfolioDetails = {
   title: "Personal Portfolio",
   image: "CClogo.png",
-  description: "Your looking at the portfolio right now",
+  description: "Host sub react app in bigger react app",
   skillsUsed: [skills.ReactJS, skills.NodeJS, skills.ExpressJS],
   github_url: "https://github.com/changc42/personalPortfolio",
+};
+
+let cpuSchedulerDetails = {
+  title: "CPU Scheduler",
+  image: "C++_Logo.svg",
+  description: "Object-Oriented Programming, Data Structures, Algorithms",
+  skillsUsed: [skills.Cpp],
+  github_url: "https://github.com/changc42/cs340/tree/master/A3",
+};
+
+let memoryAllocatorDetails = {
+  title: "Memory Allocator",
+  image: "C++_Logo.svg",
+  description: "Object-Oriented Programming, Data Structures, Algorithms",
+  skillsUsed: [skills.Cpp],
+  github_url: "https://github.com/changc42/cs340/tree/master/A4",
+};
+
+let semanticAnalyzerDetails = {
+  title: "Shift Reduce Parser",
+  image: "java-logo.jpg",
+  description: "Object-Oriented Programming, Data Structures, Algorithms",
+  skillsUsed: [skills.Java],
+  github_url: "https://github.com/changc42/cs316/tree/master/A2",
 };
 
 export default [
@@ -91,6 +115,9 @@ export default [
   // bookfastDetails,
   emailRaterDetails,
   dragNDropDetails,
+  cpuSchedulerDetails,
+  memoryAllocatorDetails,
+  semanticAnalyzerDetails,
   personalPortfolioDetails,
   // weatherappDetails,
 ];

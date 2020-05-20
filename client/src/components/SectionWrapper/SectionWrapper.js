@@ -1,9 +1,8 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 import sectionStyles from "./sectionWrapperStyles";
-import theme from "../../styling/theme";
-import Card from "@material-ui/core/Card";
-import Container from "@material-ui/core/Container";
+import theme from "../../muiTheme";
+import { Card, Container } from "@material-ui/core";
 
 function Section(props) {
   const { classes } = props;

@@ -3,7 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import aboutMeStyles from "./aboutMeStyles";
 import { withStyles } from "@material-ui/core/styles";
-import theme from "../../../styling/theme";
+import theme from "../../../muiTheme";
 
 function AboutMe(props) {
   const { classes } = props;

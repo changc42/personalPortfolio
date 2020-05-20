@@ -11,4 +11,6 @@ export default {
   Stripe: "Stripe",
   DragNDrop: "DragNDrop",
   HTTP_REST: "HTTP/REST",
+  Cpp: "C++",
+  Java: "Java",
 };

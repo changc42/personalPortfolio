@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import SocialMediaButtonStyles from "./socialMediaButtonStyles";
-import theme from "../../styling/theme";
+import theme from "../../muiTheme";
 import { withStyles } from "@material-ui/core/styles";
 
 function SocialMediaButton(props) {

@@ -1,7 +1,7 @@
 const projectCardStyling = (theme) => ({
   media: {
-    maxHeight: "300px",
-    maxWidth: "300px",
+    maxHeight: "200px",
+    maxWidth: "200px",
     margin: "auto",
     marginTop: "20px",
     marginBottom: "20px",

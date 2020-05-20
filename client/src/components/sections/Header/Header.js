@@ -1,12 +1,8 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
-import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
-import theme from "../../../styling/theme";
-import headerStyles from "../../styling/headerStyles";
-import AboutMe from "../AboutMe/AboutMe";
-import Grid from "@material-ui/core/Grid";
+import theme from "../../../muiTheme";
+import headerStyles from "./headerStyles";
+import { Grid, Typography, Container, Button } from "@material-ui/core";
 import SocialMediaButton from "../../SocialMediaButton/SocialMediaButton";
 
 const Header = (props) => {
