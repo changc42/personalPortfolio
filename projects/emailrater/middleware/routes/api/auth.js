@@ -1,9 +1,9 @@
 const { client_id, state } = require("../../../config/keys");
 const scopes = require("../../../config/scopes");
 const endpoints = require("../../../config/endpoints");
+const url = require("url");
 const fs = require("fs");
 const { redirect_uri } = require("../../../config/devVProdRoutes");
-const url = require("url");
 
 module.exports = (req, res, db) => {
   let { protocol, host, path } = url.parse(redirect_uri);

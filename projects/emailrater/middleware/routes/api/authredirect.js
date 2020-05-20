@@ -48,7 +48,7 @@ module.exports = (req, res, db) => {
       //     console.log("finished caching accessToken");
       //   }
       // );
-      console.log(authObj);
+
       let cookieId = req.headers.cookie;
       db[cookieId] = {
         accessToken: authObj.access_token,

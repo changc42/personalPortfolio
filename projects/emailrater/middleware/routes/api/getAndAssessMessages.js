@@ -48,7 +48,6 @@ function getMessageList(req, res, db) {
 }
 
 function messageListToMyMessageList(req, res, db, messageList) {
-  console.log(messageList);
   if (messageList.messages) {
     messageList.messages.forEach(({ id }) => {
       console.log(`retrieving content of id: ${id}`);

@@ -21,7 +21,6 @@ module.exports = (app, db) => {
       res.end();
     } else {
       // console.log("already have cookie", req.url);
-      // console.log(res.getHeaders());
       // console.log("db in cookie ", db);
       if (
         db[req.headers.cookie] ||
