@@ -6,7 +6,7 @@
   "scripts": {
     "server": "nodemon index.js",
     "start": "concurrently \"npm run build --prefix client\" \"npm run build --prefix projects/calculator\" \"npm run build --prefix projects/dragndrop\" \"npm run build --prefix projects/pokemonwar\" \"npm run build --prefix projects/emailrater/client\" && nodemon index.js",
-    "heroku-postbuild": "npm i --prefix projects/emailrater && npm i --prefix projects/emailrater/client && npm i --prefix projects/pokemonwar && npm i --prefix projects/calculator && npm i --prefix=client && npm i --prefix projects/dragndrop && npm run build --prefix projects/emailrater/client && npm run build --prefix=client && npm run build --prefix projects/calculator && npm run build --prefix projects/dragndrop && npm run build --prefix projects/pokemonwar"
+    "heroku-postbuild": "npm i --prefix projects/emailrater/client && npm i --prefix projects/pokemonwar && npm i --prefix projects/calculator && npm i --prefix=client && npm i --prefix projects/dragndrop && npm run build --prefix projects/emailrater/client && npm run build --prefix=client && npm run build --prefix projects/calculator && npm run build --prefix projects/dragndrop && npm run build --prefix projects/pokemonwar"
   },
   "author": "",
   "license": "ISC",
