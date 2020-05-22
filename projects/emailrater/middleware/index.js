@@ -6,6 +6,10 @@ let router = express.Router();
 
 let db = {};
 
+router.use((req, res, next) => {
+  console.log("database: ", db);s
+  next();
+});
 setupCookies(router, db);
 setupRoutes(router, db);
 
