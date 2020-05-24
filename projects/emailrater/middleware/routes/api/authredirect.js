@@ -8,7 +8,6 @@ const { redirect_uri } = require("../../../config/devVProdRoutes");
 module.exports = (req, res, db) => {
   // takes in empty accessToken object as parameter and inserts accessToken into it
   // after get access token, sends user a form
-
   let { protocol, host, path } = url.parse(redirect_uri);
   new_redirect_uri = protocol + "//" + host + req.baseUrl + path;
 
@@ -54,7 +53,6 @@ module.exports = (req, res, db) => {
         accessToken: authObj.access_token,
         myMessageList: [],
       };
-      console.log("in auth redirect, db is ", db);
 
       res.redirect(req.baseUrl + "/query");
     });

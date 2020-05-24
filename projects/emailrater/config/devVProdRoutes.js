@@ -1,6 +1,6 @@
 if (process.env.NODE_ENV === "production") {
   module.exports = {
-    redirect_uri: "https://nameless-atoll-72332.herokuapp.com/api/authredirect",
+    redirect_uri: "https://me.calebchang.tech/api/authredirect",
   };
 } else {
   module.exports = {
