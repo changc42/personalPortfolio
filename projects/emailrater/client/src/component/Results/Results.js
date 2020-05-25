@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ResultCard from "./ResultCard/ResultCard";
+import { Typography } from "@material-ui/core";
 
 export default function Results() {
   let [isLoading, setIsLoading] = useState(true);
@@ -25,7 +26,9 @@ export default function Results() {
         <p>loading your messages</p>
       ) : (
         <div className="App">
-          <h1>Results:</h1>
+          <Typography variant="h3" style={{ textAlign: "center" }}>
+            Results:
+          </Typography>
           {myMessageList.map((msg) => {
             return <ResultCard message={msg} />;
           })}
