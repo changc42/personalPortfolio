@@ -20,7 +20,8 @@ let calculatorDetails = {
   description: "State management and algorithms",
   skillsUsed: [skills.ReactJS],
   demo_url: "projects/calculator",
-  github_url: "https://github.com/rockysingh3/React-Calculator",
+  github_url:
+    "https://github.com/changc42/personalPortfolio/tree/master/projects/calculator",
 };
 
 let dragNDropDetails = {
@@ -30,7 +31,8 @@ let dragNDropDetails = {
     "State management and drag-and-drop (cursor clicks only. Not for mobile)",
   skillsUsed: [skills.ReactJS],
   demo_url: "projects/dragndrop",
-  github_url: "https://github.com/changc42/drag-and-drop",
+  github_url:
+    "https://github.com/changc42/personalPortfolio/tree/master/projects/dragndrop",
 };
 
 let emailRaterDetails = {
@@ -39,7 +41,8 @@ let emailRaterDetails = {
   description: "HTTP/REST APIs and cookie-session management",
   skillsUsed: [skills.ReactJS, skills.NodeJS, skills.HTTP_REST],
   demo_url: "projects/emailrater",
-  github_url: "https://github.com/changc42/emailrater",
+  github_url:
+    "https://github.com/changc42/personalPortfolio/tree/master/projects/emailrater",
 };
 
 let emailyDetails = {
@@ -73,7 +76,8 @@ let pokemonwarDetails = {
   description: "State management and responsive design",
   skillsUsed: [skills.ReactJS],
   demo_url: "projects/pokemonwar",
-  github_url: "https://github.com/changc42/pokemonwar",
+  github_url:
+    "https://github.com/changc42/personalPortfolio/tree/master/projects/pokemonwar",
 };
 
 let personalPortfolioDetails = {
