@@ -2,6 +2,14 @@
 
 This personal portfolio project hosts, or displays, many other projects.
 
+#### How to use
+
+Click on any of the projects to see it
+- Pokemon War: Click play again to see the cards change
+- Email Rater: Login using google, fill out the form, wait for 30 seconds, and see you rated emails
+- DragnDrop: Drag the knight to any position on the board. (Does not work with mobile)
+- CPU Scheduler, Memory Allocator, and ShiftReduceParser are only github links
+
 #### prepare subprojects by doing the following in the source repo
 
 1. Change all absolute paths (non react-router) to relative paths("./" or no slash at all. just a "/" is absolute). Add \<base href="%PUBLIC_URL%/"\> to index.html
